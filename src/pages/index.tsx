@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Layout from "../components/layout/layout";
 
 
 export default function Home() {
   return (
-    <div>
-     1
-    </div>
+    <Layout>
+      <h1>Hello World</h1>
+    </Layout>
   );
 }
