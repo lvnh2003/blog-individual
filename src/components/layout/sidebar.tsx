@@ -17,11 +17,11 @@ export default function Sidebar() {
         },
     ]
     return (
-        <div className="flex flex-row h-full justify-around items-center bg-black p-4">
+        <div className="flex flex-row h-full justify-around items-center bg-transparent p-4">
             <Icon src={"/assets/images/logo.png"} alt={'Logo'}/>
-            <div className="flex flex-row h-full justify-around bg-black p-4">
+            <div className="flex flex-row h-full justify-around bg-transparent p-4">
             {menu.map((item, index) => (
-                <Link href={item.href} className="text-white mx-12 text-xl hover:text-red-500" key={index}>
+                <Link href={item.href} className="text-white mx-12 text-xl hover:text-header" key={index}>
                     {item.name}
                 </Link>
             ))}

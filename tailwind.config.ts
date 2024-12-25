@@ -11,7 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'header': "#FAF3A0"
       },
+      backgroundImage: {
+        'backgroundmain': "url('/assets/images/bg.jpg')",
+      }
     },
   },
   plugins: [],
