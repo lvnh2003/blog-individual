@@ -1,5 +1,5 @@
 import Link from "../Link"
-import Icon from "../icon/icon"
+import Icon from "../icon/Icon"
 
 export default function Sidebar() {
     const menu = [

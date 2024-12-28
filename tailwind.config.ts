@@ -15,6 +15,10 @@ export default {
       },
       backgroundImage: {
         'backgroundmain': "url('/assets/images/bg.jpg')",
+      },
+      fontFamily:{
+        'display': ['Oswald', 'system-ui'],
+        'body': ['"Open Sans"', 'system-ui'],
       }
     },
   },
