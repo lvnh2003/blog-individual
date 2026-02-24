@@ -1,37 +1,54 @@
-import HeaderTitle from "../icon/HeaderTitle";
-import Image from "../Image";
-import Progress from "../Progress";
-
-
-const AboutSection = () => (
-  <div className="mt-[400px] py-16 flex bg-white justify-center space-x-6">
-    <div className="p-4">
-      <Image src="/assets/images/avatar.png" size={500} alt="avatar" />
-    </div>
-    <div className="text-black mt-6">
-      <HeaderTitle
-        color={"black"}
-        value={"About me."}/>
-      <p className="text-gray-400 pb-3">
-        WEBSITE DEVELOPER & AI INTEGRATION
-      </p>
-      <p className="mb-6 max-w-4xl text-gray-400 font-semibold">
-      My name is <span className="text-gray-600">Lanh</span>, and I am a software engineer with a strong passion for 
-      creating websites and applying AI technology to real-world solutions, 
-      aiming to deliver practical value and innovation to everyday life. 
-      I believe in the power of technology to transform ideas into impactful solutions. 
-      With a focus on crafting user-friendly websites and leveraging AI, I strive to bridge the gap
-       between innovation and practicality, creating experiences that truly make a difference.
-      </p>
-      <HeaderTitle
-        color={"black"}
-        value={"My Skills."}/>
-         <div className="flex flex-col space-y-16 pt-6">
-              <Progress value={90} title="Website Deloveloper" className="h-2" />
-              <Progress value={70} title="AI Integration" className="h-2" />
+export default function AboutSection() {
+  return (
+    <section className="px-6 py-20 lg:px-20 bg-black hand-drawn-border" id="about">
+      <div className="mx-auto max-w-4xl">
+        <div className="relative overflow-hidden border-4 border-white bg-white p-8 md:p-12 text-black hand-drawn-border">
+          {/* Background Pattern */}
+          <div className="absolute top-0 right-0 h-40 w-40 opacity-10">
+            <span className="material-symbols-outlined text-[10rem]">fingerprint</span>
           </div>
-    </div>
-  </div>
-);
-
-export default AboutSection;
+          <div className="relative flex flex-col md:flex-row gap-10">
+            <div className="flex flex-col items-center gap-4">
+              <div className="h-48 w-48 rounded-2xl border-4 border-primary/40 bg-slate-800 overflow-hidden">
+                <div className="h-full w-full bg-cover bg-center" data-alt="Anime portrait of the creative professional" style={{ backgroundImage: 'url("assets/images/sub-avatar.png")' }}></div>
+              </div>
+              <div className="text-center">
+                <p className="font-bold text-black uppercase tracking-tighter">Rank</p>
+                <p className="text-xl font-black">ENGINEER CLASS</p>
+              </div>
+            </div>
+            <div className="flex-1 space-y-6">
+              <div>
+                <h2 className="text-4xl font-black uppercase text-black">Character Profile</h2>
+                <p className="text-xl font-bold">Class: Full-Stack Engineer</p>
+              </div>
+              <div className="grid grid-cols-2 gap-4 text-sm">
+                <div className="space-y-1">
+                  <p className="font-bold text-black uppercase tracking-tighter">Experience</p>
+                  <p>2+ Years Active</p>
+                </div>
+                <div className="space-y-1">
+                  <p className="font-bold text-black uppercase tracking-tighter">Location</p>
+                  <p>Vietnam, DaNang</p>
+                </div>
+                <div className="space-y-1">
+                  <p className="font-bold text-black uppercase tracking-tighter">Specialty</p>
+                  <p>Frontend Developer</p>
+                </div>
+                <div className="space-y-1">
+                  <p className="font-bold text-black uppercase tracking-tighter">Alignment</p>
+                  <p>Chaotic Good Formatted</p>
+                </div>
+              </div>
+              <div className="border-t border-primary/20 pt-6">
+                <p className="leading-relaxed text-slate-600 dark:text-slate-400">
+                  Born from the intersection of logical problem-solving and modern web standards, I build digital bridges between complex requirements and scalable solutions. My mission is to craft systems that don&apos;t just work—they perform flawlessly. When I&apos;m not writing code, you&apos;ll find me exploring software architectures or diving deep into the latest tech frameworks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

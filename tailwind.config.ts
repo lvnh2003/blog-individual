@@ -6,20 +6,19 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        'header': "#FAF3A0"
+        'primary': "#000000",
+        'background-light': "#f9f7f1",
+        'background-dark': "#1a1a1a",
       },
-      backgroundImage: {
-        'backgroundmain': "url('/assets/images/bg.jpg')",
+      fontFamily: {
+        "display": ["'Patrick Hand'", "cursive"]
       },
-      fontFamily:{
-        'display': ['Oswald', 'system-ui'],
-        'body': ['"Open Sans"', 'system-ui'],
-      }
     },
   },
   plugins: [],
